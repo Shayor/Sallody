@@ -1,0 +1,286 @@
+$font-family: 'Poppins', sans-serif;
+$secondary-Color : #333399;
+$tertiary-Color : linear-gradient(to right,#42275a, #734b6d);
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.row, a{
+    padding: 0;
+    margin: 0;
+    // line-height: 0px;
+}
+a{
+    padding: 0;
+    margin: 0;
+    line-height: 0px;
+}
+button{
+    margin: 0px;
+}
+a.button-primary{
+    // @include gradient-background(left, $list1);
+    margin: 0px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 35px;
+    background-color: $secondary-Color;
+}
+a.button-primary-outline{
+    background-color: transparent;
+    margin: 0px;
+    padding: 10px 30px;
+    color: $secondary-Color;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 35px;
+    border: 1px solid $secondary-Color;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    font-family: $font-family;
+    padding: 15px 0px;
+    padding-bottom: 0px;
+    .cartOverview{
+        position: absolute;
+        top: 80px;
+        right: 15%;
+        width: 25%;
+        padding:10px;
+        z-index: 999;
+        // border: 1px solid $secondary-Color;
+        box-shadow: 0px 2px 3px rgba(218, 218, 218, 0.7);
+        background-color: #fff;
+        // opacity: 0;
+        // visibility: hidden;
+        h5{
+            font-size: 15px;  
+        }
+        h5.totalamount{
+            padding: 10px 5px;
+        }
+        .cartItem{
+            margin: 10px 0px;
+            img{
+                max-width: 100%;
+            }
+            h4{
+                font-size: 15px;
+                margin-top: 10px;
+                &:nth-child(2){
+                    color: $secondary-Color;
+                }
+            }
+        }
+    }
+    hr{
+        border: 1px solid #f2f2f2;
+        margin: 0;
+    }
+    .lower-Nav{
+        padding: 20px 0px;
+        margin: 0px;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            margin: 0;
+        }
+        ul{
+            text-align: center;
+            position: relative;
+            li{
+                display: inline-block;
+                font-size: 12px;
+                margin: 0px 10px;
+                font-weight: 600;
+                a{
+                    color: #000;
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+        .icons{
+            // text-align: end;
+            // padding: 0px;
+            span{
+                display: inline-block;
+                // line-height: 0px;
+                padding: 0px;
+                // margin: 0px;
+                &:nth-child(2){
+                    padding: 0px 20px;
+                    color: $secondary-Color;
+                }
+                &:nth-child(3){
+                    cursor: pointer;
+                    padding: 0px 5px;
+                }
+            }
+        }
+    }
+    .top-badge{
+        position: absolute;
+        top: -5px;
+        left: 80px;
+        font-size: 10px;
+        // padding: 20px;
+        width: 15px;
+        // height: 15px;
+        background-color: #ff00cc;
+        // text-align: center;
+    }
+    .button{
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    
+}
+.banner{
+    // height: 500px;
+    width: 100%;
+    background:linear-gradient(to right, rgba(0,0,0,0.7),rgba(0,0,0,0)) ,url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: $font-family;
+    padding: 100px 0px;
+    color: #ffffff;
+    h5{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    h2{
+        font-weight: 700;
+    }
+    h6{
+        font-size: 13px;
+        color: #cfcfcf;
+        font-weight: 300;
+    }
+}
+.trending{
+    font-family: $font-family;
+    h2{
+        text-align: center;
+        margin: 30px 0px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .card-item{
+        text-align: center;
+        margin: 20px 0px;
+        position: relative;
+        // border: 1px solid $secondary-Color;
+        img{
+            max-width: 100%;
+            // height: 150px;
+        }
+        p{
+            color: #cfcfcf;
+            margin-top: 10px;
+            font-size: 10px;
+        }
+        h5{
+            color: $secondary-Color;
+            font-size: 15px;
+            padding: 0px;
+            margin: 0px;
+            // line-height: 5px;
+        }
+        .overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #000;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+        }
+        .button.add-to-cart{
+            position: absolute;
+            z-index: 999;
+            top: 42%;
+            left: 0;
+            width: 100%;
+            margin-top: auto;
+            margin-left: auto;
+            cursor: pointer;
+            a.view-Details{
+                margin: 10px 0px;
+            }
+            a:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+.detail{
+    font-family: $font-family;
+    margin-top: 20px;
+        .related img{
+            margin: 10px 0px;
+        }
+        img{
+            max-width: 100%;
+        }
+        .detail-Text{
+            margin-top: 40px;
+        h2{
+            padding: 10px 0px;
+        }
+        p{
+            padding: 10px 0px;
+        }
+        h3{
+            color: $secondary-Color;
+        }
+    }
+}
+.cartPage{
+    font-family: $font-family;
+    .cartTable{
+        h4{
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+    h2{
+        padding: 10px;
+    }
+    .cartItem{
+        margin: 10px 0px;
+        img{
+            max-width: 100%;
+        }
+        h4{
+            font-size: 15px;
+            margin-top: 23px;
+            &:nth-child(2){
+                color: $secondary-Color;
+            }
+        }
+    }
+    
+}
+.totalAmountInCart{
+    padding: 10px 5px;
+    text-align: end;
+    h5{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+.emptyCart{
+    text-align: center;
+    font-family: $font-family;
+    margin-top: 40px;
+    h5{
+        padding: 10px;
+    }
+}
