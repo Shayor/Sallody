@@ -2,7 +2,7 @@ import React from "react"
 import AddButton from "./addButton";
 
 function Detail({item}){
-    const related_Img = item.related.map(img=><img src={img} />)
+    const related_Img = item.related.map(img=><img src={img} alt={"yes"}/>)
     return(
         <div className="row detail">
             <div className="col-md-1 related">

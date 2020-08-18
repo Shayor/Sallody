@@ -19,8 +19,10 @@ a{
 }
 button{
     margin: 0px;
+    outline: none;
+    display: inline-block;
 }
-a.button-primary{
+.button-primary{
     // @include gradient-background(left, $list1);
     margin: 0px;
     padding: 10px 30px;
@@ -30,7 +32,7 @@ a.button-primary{
     border-radius: 35px;
     background-color: $secondary-Color;
 }
-a.button-primary-outline{
+.button-primary-outline{
     background-color: transparent;
     margin: 0px;
     padding: 10px 30px;

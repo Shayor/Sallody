@@ -20,7 +20,7 @@ const checking = dataItems.map(item=> item.isTrending && <CardItem key={item.id}
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptates quas aperiam amet eos eius
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptates quas aperiam amet eos eius
                             </h6><br/>
-                            <div className="button"><a href="#" className="button-primary">SHOP NOW</a></div>
+                            <div className="button"><button className="button-primary">SHOP NOW</button></div>
                         </div>
                     </div>
                 </div>

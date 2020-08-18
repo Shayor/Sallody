@@ -5,13 +5,13 @@ const AddButton = ({ detail }) => {
     const {cartItems, addtoCart, removefromCart} = useContext(Context)
     const isFound = cartItems.some(data=>data.id===detail.id);
     if(isFound){
-        return <a className="button-primary"
+        return <button className="button-primary"
         onClick={()=>removefromCart(detail)}
-            disabled >ADDED</a>
+            disabled >ADDED</button>
     } else{
-        return <a className="button-primary"
+        return <button className="button-primary"
             onClick={()=>addtoCart(detail)}
-            >ADD TO CART</a>
+            >ADD TO CART</button>
     }
 }
 

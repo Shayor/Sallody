@@ -10,7 +10,7 @@ function Header(){
     const [visibility,setVisibility] = useState("hidden")
     // console.log(cartItems.l)
     function displayCart(){
-        visibility=="hidden"?setVisibility("visible"):
+        visibility==="hidden"?setVisibility("visible"):
         setVisibility("hidden")
     }
     return(
@@ -34,8 +34,8 @@ function Header(){
                         {/* <span className="btn btn-primary">Sign Up</span> */}
                     </div>
                     <div className="col-md-3 buttons">
-                        <div className="button"><a className="button-primary">SIGN UP</a></div>
-                        <div className="button cart_icon"><a className="button-primary-outline">LOG IN</a></div>
+                        <div className="button"><button className="button-primary">SIGN UP</button></div>
+                        <div className="button cart_icon"><button className="button-primary-outline">LOG IN</button></div>
                     </div>
                 </div>
             </div>
